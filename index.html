@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/code-preview.png" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media-queries.css" />
+  </head>
+
+  <div class="project-container">
+    <body>
+      <nav id="desktop-nav">
+        <label class="switch">
+          <input type="checkbox" id="toggle" />
+          <span class="slider"></span>
+        </label>
+
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#footer-contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <nav id="hamburger-nav">
+          <div class="hamburger-menu">
+            <div class="ham-icon" >
+              <svg class="hamburger-icon" xmlns="http://www.w3.org/2000/svg" onclick="toggleMenu()" fill="#fff"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z"/></svg>
+
+              <!-- <svg  id="Layer_1" class="close-menu"  fill="#fff" version="1.1" viewBox="0 0 512 512"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M443.6,387.1L312.4,255.4l131.5-130c5.4-5.4,5.4-14.2,0-19.6l-37.4-37.6c-2.6-2.6-6.1-4-9.8-4c-3.7,0-7.2,1.5-9.8,4  L256,197.8L124.9,68.3c-2.6-2.6-6.1-4-9.8-4c-3.7,0-7.2,1.5-9.8,4L68,105.9c-5.4,5.4-5.4,14.2,0,19.6l131.5,130L68.4,387.1  c-2.6,2.6-4.1,6.1-4.1,9.8c0,3.7,1.4,7.2,4.1,9.8l37.4,37.6c2.7,2.7,6.2,4.1,9.8,4.1c3.5,0,7.1-1.3,9.8-4.1L256,313.1l130.7,131.1  c2.7,2.7,6.2,4.1,9.8,4.1c3.5,0,7.1-1.3,9.8-4.1l37.4-37.6c2.6-2.6,4.1-6.1,4.1-9.8C447.7,393.2,446.2,389.7,443.6,387.1z"/></svg> -->
+              <svg  version="1.1" class="close-menu"  fill="#fff" onclick="toggleMenu()" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M5.3,18.7C5.5,18.9,5.7,19,6,19s0.5-0.1,0.7-0.3l5.3-5.3l5.3,5.3c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3   c0.4-0.4,0.4-1,0-1.4L13.4,12l5.3-5.3c0.4-0.4,0.4-1,0-1.4s-1-0.4-1.4,0L12,10.6L6.7,5.3c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4   l5.3,5.3l-5.3,5.3C4.9,17.7,4.9,18.3,5.3,18.7z"/></g></svg>
+
+            </div>
+            <div class="menu-links">
+              <li><a href="#about" onclick="toggleMenu()">About</a></li>
+              <li>
+                <a href="#experience" onclick="toggleMenu()">Experience</a>
+              </li>
+              <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+              <li><a href="#footer-contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+          </div>
+        </nav>
+      </nav>
+
+      <!-- <div class="about-me"> -->
+      <section id="profile">
+        <div class="profile-section">
+          <div class="section__pic-container">
+            <img
+              src="./assets/prof-pic.png"
+              class="about-pic"
+              alt="Profile pic"
+            />
+          </div>
+          <div class="section__text">
+            <!-- <p class="section__text__p1">Hello, I'm</p> -->
+            <h1 class="title">Frontend Developer</h1>
+            <p class="section__text__p2">Welcome, my name is Abraham Martinez Marquez.</p>
+            <p class="section__text__p2">
+              A passionate web developer willing to learn more.
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 btn-primary"
+                onclick="window.open('https://mystuff.bublup.com/api/v1/uploads/001-i-7c136237-47f2-457f-9412-976485508132__v__33_1_1')"
+              >
+                Download CV
+              </button>
+              <button
+                class="btn btn-color-1"
+                onclick="location.href='./#contact'"
+              >
+              <a href="#footer-contact">Contact Info</a>
+                
+              </button>
+            </div>
+
+            <div id="socials-container">
+              <svg
+                class="icon icon-expand"
+                id="linkedin"
+                onclick="window.open('https://www.linkedin.com/in/abraham-martinez-marquez-9b75391a8/')"
+                
+                xmlns="http://www.w3.org/2000/svg"
+                shape-rendering="geometricPrecision"
+                text-rendering="geometricPrecision"
+                image-rendering="optimizeQuality"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="#fff"
+                  d="M474.919 0H38.592C17.72 0 0 16.504 0 36.841V475.14C0 495.496 11.629 512 32.492 512h436.327C489.718 512 512 495.496 512 475.14V36.841C512 16.504 495.809 0 474.919 0zM195.043 195.043h68.928v35.136h.755c10.505-18.945 41.541-38.177 79.921-38.177 73.655 0 94.214 39.108 94.214 111.538v135.321h-73.148V316.883c0-32.427-12.947-60.883-43.227-60.883-36.768 0-54.295 24.889-54.295 65.758v117.103h-73.148V195.043zM73.139 438.861h73.148V195.043H73.139v243.818zm82.289-329.148c0 25.258-20.457 45.715-45.715 45.715-25.258 0-45.715-20.457-45.715-45.715 0-25.258 20.457-45.715 45.715-45.715 25.258 0 45.715 20.457 45.715 45.715z"
+                />
+              </svg>
+              <svg
+                class="icon icon-contract"
+                id="linkedin-2"
+                onclick="window.open('https://www.linkedin.com/in/abraham-martinez-marquez-9b75391a8/')"
+                xmlns="http://www.w3.org/2000/svg"
+                shape-rendering="geometricPrecision"
+                text-rendering="geometricPrecision"
+                image-rendering="optimizeQuality"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="#000"
+                  d="M474.919 0H38.592C17.72 0 0 16.504 0 36.841V475.14C0 495.496 11.629 512 32.492 512h436.327C489.718 512 512 495.496 512 475.14V36.841C512 16.504 495.809 0 474.919 0zM195.043 195.043h68.928v35.136h.755c10.505-18.945 41.541-38.177 79.921-38.177 73.655 0 94.214 39.108 94.214 111.538v135.321h-73.148V316.883c0-32.427-12.947-60.883-43.227-60.883-36.768 0-54.295 24.889-54.295 65.758v117.103h-73.148V195.043zM73.139 438.861h73.148V195.043H73.139v243.818zm82.289-329.148c0 25.258-20.457 45.715-45.715 45.715-25.258 0-45.715-20.457-45.715-45.715 0-25.258 20.457-45.715 45.715-45.715 25.258 0 45.715 20.457 45.715 45.715z"
+                />
+              </svg>
+
+              <svg
+                class="icon icon-expand" 
+                id="git"
+                onclick="window.open('https://github.com/abmartinezm')"
+                xmlns="http://www.w3.org/2000/svg"
+                width="64"
+                height="64"
+                shape-rendering="geometricPrecision"
+                text-rendering="geometricPrecision"
+                image-rendering="optimizeQuality"
+                fill-rule="evenodd"
+                fill="#fff"
+                clip-rule="evenodd"
+                viewBox="0 0 640 640"
+              >
+                <path
+                  d="M319.988 7.973C143.293 7.973 0 151.242 0 327.96c0 141.392 91.678 261.298 218.826 303.63 16.004 2.964 21.886-6.957 21.886-15.414 0-7.63-.319-32.835-.449-59.552-89.032 19.359-107.8-37.772-107.8-37.772-14.552-36.993-35.529-46.831-35.529-46.831-29.032-19.879 2.209-19.442 2.209-19.442 32.126 2.245 49.04 32.954 49.04 32.954 28.56 48.922 74.883 34.76 93.131 26.598 2.882-20.681 11.15-34.807 20.315-42.803-71.08-8.067-145.797-35.516-145.797-158.14 0-34.926 12.52-63.485 32.965-85.88-3.33-8.078-14.291-40.606 3.083-84.674 0 0 26.87-8.61 88.029 32.8 25.512-7.075 52.878-10.642 80.056-10.76 27.2.118 54.614 3.673 80.162 10.76 61.076-41.386 87.922-32.8 87.922-32.8 17.398 44.08 6.485 76.631 3.154 84.675 20.516 22.394 32.93 50.953 32.93 85.879 0 122.907-74.883 149.93-146.117 157.856 11.481 9.921 21.733 29.398 21.733 59.233 0 42.792-.366 77.28-.366 87.804 0 8.516 5.764 18.473 21.992 15.354 127.076-42.354 218.637-162.274 218.637-303.582 0-176.695-143.269-319.988-320-319.988l-.023.107z"
+                />
+              </svg>
+              <svg
+                class="icon icon-contract"
+                id="git-2"
+                onclick="window.open('https://github.com/abmartinezm')"
+                xmlns="http://www.w3.org/2000/svg"
+                width="64"
+                height="64"
+                shape-rendering="geometricPrecision"
+                text-rendering="geometricPrecision"
+                image-rendering="optimizeQuality"
+                fill-rule="evenodd"
+                fill="#000"
+                clip-rule="evenodd"
+                viewBox="0 0 640 640"
+              >
+                <path
+                  d="M319.988 7.973C143.293 7.973 0 151.242 0 327.96c0 141.392 91.678 261.298 218.826 303.63 16.004 2.964 21.886-6.957 21.886-15.414 0-7.63-.319-32.835-.449-59.552-89.032 19.359-107.8-37.772-107.8-37.772-14.552-36.993-35.529-46.831-35.529-46.831-29.032-19.879 2.209-19.442 2.209-19.442 32.126 2.245 49.04 32.954 49.04 32.954 28.56 48.922 74.883 34.76 93.131 26.598 2.882-20.681 11.15-34.807 20.315-42.803-71.08-8.067-145.797-35.516-145.797-158.14 0-34.926 12.52-63.485 32.965-85.88-3.33-8.078-14.291-40.606 3.083-84.674 0 0 26.87-8.61 88.029 32.8 25.512-7.075 52.878-10.642 80.056-10.76 27.2.118 54.614 3.673 80.162 10.76 61.076-41.386 87.922-32.8 87.922-32.8 17.398 44.08 6.485 76.631 3.154 84.675 20.516 22.394 32.93 50.953 32.93 85.879 0 122.907-74.883 149.93-146.117 157.856 11.481 9.921 21.733 29.398 21.733 59.233 0 42.792-.366 77.28-.366 87.804 0 8.516 5.764 18.473 21.992 15.354 127.076-42.354 218.637-162.274 218.637-303.582 0-176.695-143.269-319.988-320-319.988l-.023.107z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <!-- <p class="section__text__p1">Get to know more </p> -->
+        <h1 class="title title-section">ABOUT ME</h1>
+        <div class="section-container">
+          <div class="about-details-container">
+            <p class="description">
+              A dedicated junior Frontend Developer based in Aguascalientes,
+              Mexico. As a student, I lived out my enthusiasm for programming
+              and constantly improved myself. During my studies, especially in
+              Germany, I was able to focus on programming and alongside my
+              personal projects, I gathered knowledge of HTML, CSS, JavaScript
+              and React that helps me to create responsive websites that offer
+              smooth user experience. I am a team player who thrives in
+              collaborating with others to produce outstanding web applications.
+            </p>
+            <div class="about-containers">
+              <div class="details-container details-about-me">
+                <?xml version="1.0" encoding="utf-8"?><svg
+                  version="1.1"
+                  id="exp"
+                  class="exp-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 71.69 122.88"
+                  style="enable-background: new 0 0 71.69 122.88"
+                  fill="#fff"
+                  xml:space="preserve"
+                >
+                  <style type="text/css">
+                    .st0 {
+                      fill-rule: evenodd;
+                      clip-rule: evenodd;
+                    }
+                  </style>
+                  <g>
+                    <path
+                      class="st0"
+                      d="M1.19,0.02h25.91l23.34,42.45c0.5,0.9,1.23,1.61,2.06,2.06H17.66L1.19,0V0.02L1.19,0.02z M35.85,51.19 c19.8,0,35.85,16.05,35.85,35.85s-16.05,35.85-35.85,35.85C16.05,122.88,0,106.83,0,87.03S16.05,51.19,35.85,51.19L35.85,51.19z M35.85,66.34l5.99,14.62l15.77,1.19L45.54,92.39l3.75,15.34L35.85,99.4l-13.44,8.33l3.75-15.34L14.08,82.14l15.77-1.19 L35.85,66.34L35.85,66.34L35.85,66.34z M39.03,0.02h30.32L57.15,33L39.03,0.02L39.03,0.02z"
+                    />
+                  </g>
+                </svg>
+                <?xml version="1.0" encoding="utf-8"?><svg
+                  version="1.1"
+                  id="exp-2"
+                  class="exp-icon icon-contract"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 71.69 122.88"
+                  style="enable-background: new 0 0 71.69 122.88"
+                  xml:space="preserve"
+                >
+                  <style fill="000" type="text/css">
+                    .st0 {
+                      fill-rule: evenodd;
+                      clip-rule: evenodd;
+                    }
+                  </style>
+                  <g>
+                    <path
+                      class="st0"
+                      d="M1.19,0.02h25.91l23.34,42.45c0.5,0.9,1.23,1.61,2.06,2.06H17.66L1.19,0V0.02L1.19,0.02z M35.85,51.19 c19.8,0,35.85,16.05,35.85,35.85s-16.05,35.85-35.85,35.85C16.05,122.88,0,106.83,0,87.03S16.05,51.19,35.85,51.19L35.85,51.19z M35.85,66.34l5.99,14.62l15.77,1.19L45.54,92.39l3.75,15.34L35.85,99.4l-13.44,8.33l3.75-15.34L14.08,82.14l15.77-1.19 L35.85,66.34L35.85,66.34L35.85,66.34z M39.03,0.02h30.32L57.15,33L39.03,0.02L39.03,0.02z"
+                    />
+                  </g>
+                </svg>
+
+                <h3 class="about-details">Experience</h3>
+                <p class="exp">2 years in testing at Capgemini Mexico</p>
+                <p class="exp">
+                  Portfolio with self-developed Frontend projects
+                </p>
+              </div>
+              <div class="details-container details-about-me">
+                <svg
+                  version="1.1"
+                  class="icon educ-icon"
+                  id="edu"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  fill="#fff"
+                  viewBox="0 0 122.88 73.27"
+                  style="enable-background: new 0 0 122.88 73.27"
+                  xml:space="preserve"
+                >
+                  <style type="text/css"></style>
+                  <g>
+                    <path
+                      class="st0"
+                      d="M104.27,58.88l-0.54-19.99l-32.85,9.49c-2.96,0.65-5.88,0.96-8.74,0.97c-3.07,0.01-6.09-0.32-9.06-0.97 L21.7,38.79v20.27c0.9,10.53,31.11,13.75,40.38,14.19c7.43,0.36,36.78-3.52,40.64-9.57C103.55,62.36,104.07,60.76,104.27,58.88 L104.27,58.88z M117.58,24.5v24.43h0.77c0.53,0,0.96,0.43,0.96,0.96v6.57c0,0.52-0.43,0.96-0.96,0.96h-0.77v2.3 c0.98,0.18,1.73,1.05,1.73,2.08v0c0,1.16-0.96,2.12-2.12,2.12h-3.79c-1.16,0-2.12-0.95-2.12-2.12v0c0-1.03,0.75-1.9,1.73-2.08v-2.3 h-0.77c-0.52,0-0.96-0.43-0.96-0.96v-6.57c0-0.53,0.43-0.96,0.96-0.96h0.77v-23L73.03,38.35c-7.24,1.72-14.48,1.84-21.72,0 L7.18,25.18l-3.99-1.19c-4.97-2.03-3.73-6.8,0.9-7.9L54,1.19c5.15-1.47,10.29-1.7,15.44,0l49.01,14.72 c5.33,1.3,6.38,6.23,0.18,8.26L117.58,24.5L117.58,24.5z"
+                    />
+                  </g>
+                </svg>
+                <svg
+                  version="1.1"
+                  class="educ-icon"
+                  id="edu-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  fill="#000"
+                  viewBox="0 0 122.88 73.27"
+                  style="enable-background: new 0 0 122.88 73.27"
+                  xml:space="preserve"
+                >
+                  <style type="text/css"></style>
+                  <g>
+                    <path
+                      class="st0"
+                      d="M104.27,58.88l-0.54-19.99l-32.85,9.49c-2.96,0.65-5.88,0.96-8.74,0.97c-3.07,0.01-6.09-0.32-9.06-0.97 L21.7,38.79v20.27c0.9,10.53,31.11,13.75,40.38,14.19c7.43,0.36,36.78-3.52,40.64-9.57C103.55,62.36,104.07,60.76,104.27,58.88 L104.27,58.88z M117.58,24.5v24.43h0.77c0.53,0,0.96,0.43,0.96,0.96v6.57c0,0.52-0.43,0.96-0.96,0.96h-0.77v2.3 c0.98,0.18,1.73,1.05,1.73,2.08v0c0,1.16-0.96,2.12-2.12,2.12h-3.79c-1.16,0-2.12-0.95-2.12-2.12v0c0-1.03,0.75-1.9,1.73-2.08v-2.3 h-0.77c-0.52,0-0.96-0.43-0.96-0.96v-6.57c0-0.53,0.43-0.96,0.96-0.96h0.77v-23L73.03,38.35c-7.24,1.72-14.48,1.84-21.72,0 L7.18,25.18l-3.99-1.19c-4.97-2.03-3.73-6.8,0.9-7.9L54,1.19c5.15-1.47,10.29-1.7,15.44,0l49.01,14.72 c5.33,1.3,6.38,6.23,0.18,8.26L117.58,24.5L117.58,24.5z"
+                    />
+                  </g>
+                </svg>
+
+                <h3 class="about-details">Education</h3>
+                <p class="exp">Mechatronics Bachelor</p>
+                <p class="exp">Semester abroad in the USA</p>
+                <p class="exp">Semester abroad in Germany</p>
+              </div>
+            </div>
+            <div class="text-container"></div>
+          </div>
+        </div>
+        <!-- <img src="./assets/arrow.png" alt="Arrow icon " class="icon arrow" onclick="location.href='./#experience'"> -->
+      </section>
+      <!-- </div> -->
+
+      <section id="experience">
+        <!-- <p class="section__text__p1">Explore my</p> -->
+        <!-- <h1 class="title title-section">Experience</h1> -->
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="experience-sub-title title-section">TECH STACK</h2>
+              <div class="article-container">
+                <ul class="skills-list">
+                  <li>
+                    <img
+                      src="./assets/html-icon.svg"
+                      alt="Expetience icon"
+                      class="icon"
+                    />
+                    <div class="technolgy-desc">HTML</div>
+                    <p class="tech-knowledge">Intermediate</p>
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/css-icon.svg"
+                      alt="Expetience icon"
+                      class="icon"
+                    />
+                    <div class="technolgy-desc">CSS</div>
+                    <p class="tech-knowledge">Intermediate</p>
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/sass-icon.svg"
+                      alt="Expetience icon"
+                      class="icon"
+                    />
+                    <div class="technolgy-desc">SASS</div>
+                    <p class="tech-knowledge">Intermediate</p>
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/javascript-icon.svg"
+                      alt="Expetience icon"
+                      class="icon"
+                    />
+                    <div class="technolgy-desc">JavaScript</div>
+                    <p class="tech-knowledge">Intermediate</p>
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/react-js-icon.svg"
+                      alt="Expetience icon"
+                      class="icon"
+                    />
+                    <div class="technolgy-desc">React</div>
+                    <p class="tech-knowledge">Basic</p>
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/bootstrap-5-logo-icon.svg"
+                      alt="Expetience icon"
+                      class="icon"
+                    />
+                    <div class="technolgy-desc">Bootstrap 5</div>
+                    <p class="tech-knowledge">Basic</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <!-- <p class="section__text__p1">Browse my recent</p> -->
+        <h1 class="title title-section">PROJECTS</h1>
+        <div class="experience-details-container">
+          <div class="about-containers projects-container">
+            <div class="details-container color-container">
+              <div class="project-1">
+                <h2 class="experience-sub-title project-title">E-commerce Sneakers</h2>
+
+                <div class="project-info">
+                  <div class="project-description">
+                    <p class="functionality">
+                      
+                      Developed with <span class="stack">React</span> and <span class="stack">CSS</span>.
+                      <br>
+                      Users should be able to:
+                      Open a lightbox gallery by clicking on the large product image.
+                      Switch the large product image by clicking on the small thumbnail images.
+                      Add items to the cart.
+                      View the cart and remove items from it.
+                      View the optimal layout for the site depending on their device's screen size.
+                      See hover states for all interactive elements on the page.
+                  </p>
+                  </div>
+  
+                 
+                </div>
+
+                <img
+                  src="./assets/Projects/ecommerce_preview.png"
+                  alt="Project 1"
+                  class="project-img-1"
+                />
+              </div>
+
+              
+
+              
+
+              <div class="btn-container">
+                <button
+                  class="project-btn"
+                  onclick="window.open('https://github.com/abmartinezm/Sneakers-Ecommerce')"
+                  
+                >
+                  Code
+                  <img src="./assets/code.png" class="icon-code" alt="" />
+                </button>
+                <button
+                  class="project-btn"
+                  onclick="window.open('https://sneakers-ecommerce-mu.vercel.app/')"
+                 
+                >
+                  Live Demo
+                  <img src="./assets/link.png" class="icon-code" alt="" />
+                </button>
+              </div>
+            </div>
+
+            <div class="details-container color-container">
+              <div class="project-2">
+                <h2 class="experience-sub-title project-title">IP Address Tracker</h2>
+
+                <div class="project-info">
+                  <div class="project-description">
+                    <p class="functionality">
+                      
+                      Developed with <span class="stack">React</span>, <span class="stack">CSS</span>, <span class="stack">JS</span> and <span class="stack">API</span>.
+                      <br>
+                      Users should be able to:
+                      See their own IP Address on the map on the initial page load.
+                      Search for any IP addresses or domains and see the key information and location.
+                      View the optimal layout for each page depending on their device's screen size.
+                      See hover states for all interactive elements on the page.
+                  
+                  </p>
+                  </div>
+
+                </div>
+
+                <img
+                  src="./assets/Projects/ip-preview.png"
+                  alt="Project 2"
+                  class="project-img-2"
+                />
+              </div>
+
+              <div class="btn-container">
+                <button
+                  class="project-btn"
+                  onclick="window.open('https://github.com/abmartinezm/IP-Tracker/tree/main')"
+                >
+                  Code
+                  <img src="./assets/code.png" class="icon-code" alt="" />
+                </button>
+                <button
+                  class="project-btn"
+                   onclick="window.open('https://ip-tracker-orpin-xi.vercel.app/')"
+                >
+                  Live Demo
+                  <img src="./assets/link.png" class="icon-code" alt="" />
+                </button>
+              </div>
+            </div>
+
+            <div class="details-container color-container">
+              <div class="project-3">
+                <h2 class="experience-sub-title project-title">
+                  Github User Search
+                </h2>
+
+                <div class="project-info">
+                  <div class="project-description">
+                    <p class="functionality">
+                      
+                      Developed with <span class="stack">React</span>, <span class="stack">CSS</span> and <span class="stack">API</span>.
+                      <br>
+                      Users should be able to:
+                      Search for GitHub users by their username.
+                      See relevant user information based on their search.
+                      Switch between light and dark themes.
+                      View the optimal layout for the app depending on their device's screen size.
+                      See hover states for all interactive elements on the page.
+                  
+                  </p>
+                  </div>
+                </div>
+
+                <img
+                  src="./assets/Projects/github-search-preview.png"
+                  alt="Project 3"
+                  class="project-img-3"
+                />
+              </div>
+
+              <div class="btn-container">
+                <button
+                  class="project-btn"
+                  onclick="window.open('https://github.com/abmartinezm/Github-User-Search')"
+                >
+                  Code
+                  <img src="./assets/code.png" class="icon-code" alt="" />
+                </button>
+                <button
+                  class="project-btn"
+                  onclick="window.open('https://github-user-search-fqx7euqyv-abmartinezms-projects.vercel.app/')"
+                >
+                  Live Demo
+                  <img src="./assets/link.png" class="icon-code" alt="" />
+                </button>
+              </div>
+            </div>
+
+            <div class="details-container color-container">
+              <div class="project-4">
+                <h2 class="experience-sub-title project-title">Blogr Landing Page</h2>
+
+                <div class="project-info">
+                  <div class="project-description">
+                    <p class="functionality">
+                      
+                      Developed with <span class="stack">React</span> and <span class="stack">CSS</span>.
+                      <br>
+                      Users should be able to:
+                      View the optimal layout for the site depending on their device's screen size.
+                      See hover states for all interactive elements on the page.
+                  </p>
+                  </div>
+                </div>
+
+                <img
+                  src="./assets/Projects/landing-page-preview.png"
+                  alt="Project 4"
+                  class="project-img-4"
+                />
+              </div>
+
+              <div class="btn-container">
+                <button
+                  class="project-btn"
+                  onclick="window.open('https://github.com/abmartinezm/Bglr-Landing-Page/tree/main')"
+                >
+                  Code
+                  <img src="./assets/code.png" class="icon-code" alt="" />
+                </button>
+                <button
+                  class="project-btn"
+                  onclick="window.open('https://blg-landing-page.vercel.app/')"
+                >
+                  Live Demo
+                  <img src="./assets/link.png" class="icon-code" alt="" />
+                </button>
+              </div>
+            </div>
+
+            <div class="details-container color-container">
+              <div class="project-5">
+                <h2 class="experience-sub-title project-title">Bookmark Landing Page</h2>
+
+                <div class="project-info">
+                  <div class="project-description">
+                    <p class="functionality">
+                      
+                      Developed with <span class="stack">HTML</span>, <span class="stack">CSS</span> and <span class="stack">JS</span>.
+                      <br>
+                      Users should be able to:
+                      View the optimal layout for the interface depending on their device's screen size.
+                      See hover and focus states for all interactive elements on the page.
+                      Receive an error message when the newsletter form is submitted if:
+                      The input field is empty, the email address is not formatted correctly.
+
+                  </p>
+                  </div>
+                </div>
+
+
+                <img
+                  src="./assets/Projects/bookmark-preview.png"
+                  alt="Project 5"
+                  class="project-img-5"
+                />
+              </div>
+              <div class="btn-container">
+                <button
+                  class="project-btn"
+                  onclick="window.open('https://github.com/abmartinezm/Bookmark-Landing-Page')"
+                >
+                  Code
+                  <img src="./assets/code.png" class="icon-code" alt="" />
+                </button>
+                <button
+                  class="project-btn"
+                  onclick="window.open('https://bookmark-landing-page-gamma-beige.vercel.app/')"
+                >
+                  Live Demo
+                  <img src="./assets/link.png" class="icon-code" alt="" />
+                </button>
+              </div>
+            </div>
+
+            <div class="details-container color-container">
+              <div class="project-6">
+                <h2 class="experience-sub-title project-title">Crypto Tracker</h2>
+
+                <div class="project-info">
+                  <div class="project-description">
+                    <p class="functionality">
+                      
+                      Developed with <span class="stack">React</span>, <span class="stack">CSS</span> and <span class="stack">API</span>.
+                      <br>
+                      Users should be able to:
+                      View the optimal layout for the interface depending on their device's screen size.
+                      Filter the desired data while typing.
+
+                  </p>
+                  </div>
+                </div>
+
+                <img
+                  src="./assets/projects/crypto-preview.png"
+                  alt="Project 6"
+                  class="project-img-6"
+                />
+              </div>
+              <div class="btn-container">
+                <button
+                  class="project-btn"
+                  onclick="window.open('https://github.com/abmartinezm/Crypto-Tracker')"
+                >
+                  Code
+                  <img src="./assets/code.png" class="icon-code" alt="" />
+                </button>
+                <button
+                  class="project-btn"
+                  onclick="window.open('https://crypto-tracker-eta-blush.vercel.app/')"
+                >
+                  Live Demo
+                  <img src="./assets/link.png" class="icon-code" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer id="footer-contact" href='#navigateToFooter'>
+        <button onclick="topScroll()" id="scroll" title="Go to top">
+          <img src="./assets/DarkMode/arrow-up.svg" id="arrow-up" alt="" />
+        </button>
+
+        <div class="footer-info-upper-container">
+          <!-- <p class="section__text__p2">© 2024 Abraham MArtinez Marquez. All rights reserved.</p> -->
+          <h1 class="footer__text__p1">Get in touch</h1>
+          <div class="footer-info-container">
+            <div class="footer-socials">
+            <div class="contact-email">
+              <?xml version="1.0" encoding="utf-8"?><svg
+                class="email-icon"
+                version="1.1"
+                onclick="location.href='mailto:abraham_martinez.m@outlook.com'"
+                id="email"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="122.88px"
+                height="78.607px"
+                viewBox="0 0 122.88 78.607"
+                enable-background="new 0 0 122.88 78.607"
+                xml:space="preserve"
+              >
+                <g>
+                  <path
+                    fill-rule="evenodd"
+                    fill="#fff"
+                    clip-rule="evenodd"
+                    d="M61.058,65.992l24.224-24.221l36.837,36.836H73.673h-25.23H0l36.836-36.836 L61.058,65.992L61.058,65.992z M1.401,0l59.656,59.654L120.714,0H1.401L1.401,0z M0,69.673l31.625-31.628L0,6.42V69.673L0,69.673z M122.88,72.698L88.227,38.045L122.88,3.393V72.698L122.88,72.698z"
+                  />
+                </g>
+              </svg>
+              <?xml version="1.0" encoding="utf-8"?><svg
+                class="icon-contract email-icon"
+                onclick="location.href='mailto:abraham_martinez.m@outlook.com'"
+                version="1.1"
+                id="email-2"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="122.88px"
+                height="78.607px"
+                viewBox="0 0 122.88 78.607"
+                enable-background="new 0 0 122.88 78.607"
+                xml:space="preserve"
+              >
+                <g>
+                  <path
+                    fill-rule="evenodd"
+                    fill="#000"
+                    clip-rule="evenodd"
+                    d="M61.058,65.992l24.224-24.221l36.837,36.836H73.673h-25.23H0l36.836-36.836 L61.058,65.992L61.058,65.992z M1.401,0l59.656,59.654L120.714,0H1.401L1.401,0z M0,69.673l31.625-31.628L0,6.42V69.673L0,69.673z M122.88,72.698L88.227,38.045L122.88,3.393V72.698L122.88,72.698z"
+                  />
+                </g>
+              </svg>
+
+              <p>
+                <a class="link" href="mailto:abraham_martinez.m@outlook.com"
+                  >abraham_martinez.m@outlook.com</a
+                >
+              </p>
+            </div>
+
+            <div class="contact-linkedin">
+              <svg
+                class="icon-expand linkedin-icon"
+                id="contact-linkedin"
+                onclick="window.open('https://www.linkedin.com/in/abraham-martinez-marquez-9b75391a8/')"
+                xmlns="http://www.w3.org/2000/svg"
+                shape-rendering="geometricPrecision"
+                text-rendering="geometricPrecision"
+                image-rendering="optimizeQuality"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="#fff"
+                  d="M474.919 0H38.592C17.72 0 0 16.504 0 36.841V475.14C0 495.496 11.629 512 32.492 512h436.327C489.718 512 512 495.496 512 475.14V36.841C512 16.504 495.809 0 474.919 0zM195.043 195.043h68.928v35.136h.755c10.505-18.945 41.541-38.177 79.921-38.177 73.655 0 94.214 39.108 94.214 111.538v135.321h-73.148V316.883c0-32.427-12.947-60.883-43.227-60.883-36.768 0-54.295 24.889-54.295 65.758v117.103h-73.148V195.043zM73.139 438.861h73.148V195.043H73.139v243.818zm82.289-329.148c0 25.258-20.457 45.715-45.715 45.715-25.258 0-45.715-20.457-45.715-45.715 0-25.258 20.457-45.715 45.715-45.715 25.258 0 45.715 20.457 45.715 45.715z"
+                />
+              </svg>
+              <svg
+                class="icon-contract in linkedin-icon"
+                id="contact-linkedin-2"
+                onclick="window.open('https://www.linkedin.com/in/abraham-martinez-marquez-9b75391a8/')"
+                xmlns="http://www.w3.org/2000/svg"
+                shape-rendering="geometricPrecision"
+                text-rendering="geometricPrecision"
+                image-rendering="optimizeQuality"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="#000"
+                  d="M474.919 0H38.592C17.72 0 0 16.504 0 36.841V475.14C0 495.496 11.629 512 32.492 512h436.327C489.718 512 512 495.496 512 475.14V36.841C512 16.504 495.809 0 474.919 0zM195.043 195.043h68.928v35.136h.755c10.505-18.945 41.541-38.177 79.921-38.177 73.655 0 94.214 39.108 94.214 111.538v135.321h-73.148V316.883c0-32.427-12.947-60.883-43.227-60.883-36.768 0-54.295 24.889-54.295 65.758v117.103h-73.148V195.043zM73.139 438.861h73.148V195.043H73.139v243.818zm82.289-329.148c0 25.258-20.457 45.715-45.715 45.715-25.258 0-45.715-20.457-45.715-45.715 0-25.258 20.457-45.715 45.715-45.715 25.258 0 45.715 20.457 45.715 45.715z"
+                />
+              </svg>
+
+              <p>
+                <a
+                  class="link"
+                  onclick="window.open('https://www.linkedin.com/in/abraham-martinez-marquez-9b75391a8/')"
+                  >LinkedIn</a
+                >
+              </p>
+            </div>
+          </div>
+            <!-- <p class="section__text__p2">
+              © 2024 Abraham Martinez Marquez. All rights reserved.
+            </p> -->
+          </div>
+        </div>
+      </footer>
+
+      <script src="script.js"></script>
+    </body>
+  </div>
+</html>

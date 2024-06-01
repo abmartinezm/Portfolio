@@ -1,0 +1,255 @@
+ @media screen and (max-width:1400px) {
+    #profile{
+        height: 83vh;
+        margin-bottom: 6rem;
+    }
+
+    .about-containers{
+        flex-wrap: wrap;
+    }
+
+}
+
+
+@media screen and (max-width:1200px) {
+    .nav-links{
+        display:none;
+    }
+    
+    #hamburger-nav{
+        position: absolute;
+        right: 30px;
+        display:flex;
+       
+    }
+
+    .details-container{
+        margin: 0 auto;
+    }
+
+    .project-img-1,.project-img-2,.project-img-3,.project-img-4,.project-img-5,.project-img-6{
+        width:60vw;
+    }
+
+    /* .profile-section{
+
+    } */
+
+    .about-pic {
+        border-radius: 2rem;
+        width:15rem;
+        height:15rem;
+      }
+
+      .section__pic-container {
+        display: flex;
+        height: 270px;
+        width: 270px;
+        margin: auto 0;
+        align-items: center;
+        justify-content: left;
+      }
+
+
+    
+
+}
+
+
+@media (max-width:600px) and (max-width:670px){
+    .section__pic-container {
+        display: flex;
+        height: 150px;
+        width: 150px;
+        margin: auto 0;
+        align-items: center;
+        justify-content: left;
+      }
+
+}
+
+@media screen and (max-width:600px){
+
+    #profile{
+        height:80vh;
+        width:70vw ;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .profile-section{
+        display: block;
+        padding: 2rem;
+    }
+
+    .about-pic{
+        height:150px;
+        width: 150px;
+    }
+
+
+    
+    .section__pic-container{
+        width:auto;
+        height: 40vw;
+        justify-content: center;
+    }
+
+    .title{
+        font-size:1.2rem;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    
+    .section__text__p2{
+        font-size:.8rem;
+        text-align: center;
+    }
+
+    .btn{
+        width: 100px;
+        height: 30px;
+        font-size: 10px;
+        display: flex;
+        align-items:center;
+    }
+
+    #socials-container{
+        display: flex;
+        justify-content:center
+    }
+
+    #desktop-nav{
+        position: relative;
+    }
+
+    #hamburger-nav{
+        position: absolute;
+        right: 30px;
+        display:flex;
+       
+    }
+
+    .nav-links-container{
+        display:none;
+    }
+
+    .description,.functionality{
+        font-size:.8rem;
+    }
+
+    .project-info{
+        display: block;
+        margin: 1rem;
+        margin-bottom: 2rem;
+      }
+
+    .project-description{
+        width: 100%;
+        margin: 0 auto;
+      }
+
+    #about{
+        width: 70vw;
+        margin: 0 auto;
+    }
+
+    .exp-icon, .educ-icon{
+        scale: .8;
+    }
+
+    .about-details{
+        font-size: .9em;
+    }
+
+    .exp{
+        font-size: .8rem;
+    }
+
+    .details-container{
+        padding: 10px;
+    }
+
+    #experience{
+        width: 70vw;
+        margin: auto;
+    }
+
+    .skills-list{
+        width: auto;
+    }
+
+    .technolgy-desc{
+        margin-top: 20px;
+    }
+
+    #projects{
+        width: 70vw;
+        margin: auto;
+
+    }
+
+    .project-img-1,.project-img-2, .project-img-3, .project-img-4,.project-img-5,.project-img-6{
+        width:70vw;
+        border-radius: .5rem;
+      }
+
+      
+
+    .project-title{
+        font-size: 1rem;
+    }
+
+    #footer-contact{
+        height:12vh;
+
+    }
+
+    .footer-info-upper-container{
+        display:block;
+        height: 13vh;
+        position: relative;
+    }
+
+    .footer__text__p1{
+        position: absolute;
+        left: 1rem;
+        top: 6vh;
+        font-size: .8rem;
+    }
+
+    .footer-info-container{
+        display: block;
+        
+    }
+
+    .footer-socials{
+        padding-top: 2vh;
+    }
+
+    .contact-email,.contact-linkedin{
+        width: 100%;
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content:space-evenly;
+      }
+
+      .contact-linkedin{
+        margin-top: 0;
+      }
+
+      .email-icon{
+        margin-right: -50px;
+      }
+
+    .link{
+        font-size:.6rem;
+    }
+
+    .section__text__p2{
+        font-size:.6rem;
+        margin-top: 1rem;
+    }
+} 
